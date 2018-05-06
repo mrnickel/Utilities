@@ -10,11 +10,11 @@
 # 2. Allow banners
 # 3. Unselect "Show in Notification Center"
 
-workMinutes=${1:-"20"}
-standMinutes=${2:-"3"}
+workMinutes=${1:-20}
+standMinutes=${2:-3}
 
-workSleepTime=$workMinutes*60
-standSleepTime=$standMinutes*60
+workSleepTime=$(($workMinutes * 60))
+standSleepTime=$(($standMinutes * 60))
 
 while true; do
   sleep $workSleepTime
